@@ -1,0 +1,17 @@
+package com.obms.account;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+@EnableEurekaClient
+@SpringBootApplication
+public class AccountApplication {
+
+    public static void main(String[] args) {
+
+        new SpringApplicationBuilder()
+                .sources(AccountApplication.class)
+                .run(args);
+    }
+}
